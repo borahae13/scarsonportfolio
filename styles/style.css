@@ -1,6 +1,7 @@
 :root {
   --primary-color: #c4ecdc;
   --secondary-color: #f5f2fe;
+  --tertiary-color: #bedbbc;
   --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
   --font-family: "Maven Pro", sans-serif;
 }
@@ -95,7 +96,8 @@ p {
 }
 
 .about-paragraphs p {
-  margin: 10px;
+  /* margin: 10px; */
+  text-align: center;
 }
 
 .email-link {
@@ -119,4 +121,13 @@ p {
   padding: 20px 15px;
   text-decoration: none;
   text-transform: capitalize;
+}
+.img-fluid {
+  max-width: 100%;
+  max-height: auto;
+}
+.footer contact-box {
+  background-color: var(--tertiary-color);
+  padding: 30px;
+  border-radius: 10px;
 }
