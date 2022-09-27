@@ -50,6 +50,12 @@ h3 {
   padding: 20px;
   color: #bedbbc;
 }
+h4 {
+  font-size: 24px;
+  color: var(--tertiary-color);
+  font-weight: 400;
+  line-height: 1.5;
+}
 
 p {
   /* background: var(--secondary-color); */
@@ -73,16 +79,18 @@ p {
   text-transform: capitalize;
 }
 
-.contact-link {
+.contact-link,
+.about-link,
+.project-link {
   background: var(--primary-color);
   box-shadow: var(--box-shadow);
   color: white;
 }
 
-.about-link {
+/* .about-link {
   color: var(--primary-color);
   border: 1px solid var(--primary-color);
-}
+} */
 
 .homepage-link {
   color: var(--primary-color);
@@ -122,12 +130,31 @@ p {
   text-decoration: none;
   text-transform: capitalize;
 }
-.img-fluid {
-  max-width: 100%;
-  max-height: auto;
+.intro {
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+  padding-top: 80px;
+  flex-wrap: wrap;
 }
-.footer contact-box {
-  background-color: var(--tertiary-color);
-  padding: 30px;
-  border-radius: 10px;
+.photo {
+  max-width: 900px;
+  padding-top: 0;
+  margin-top: 0;
+  object-fit: cover;
+  object-position: bottom;
+}
+footer {
+  position: relative;
+  color: var(--secondary-color);
+  font-size: 12px;
+  text-align: center;
+  height: 100px;
+  bottom: 0;
+  padding: 15px;
+  width: 100%;
+}
+.flowers {
+  max-width: 300px;
+  height: auto;
 }
