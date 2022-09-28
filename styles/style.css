@@ -144,13 +144,6 @@ p {
   padding-top: 80px;
   flex-wrap: wrap;
 }
-.photo {
-  max-width: 900px;
-  padding-top: 0;
-  margin-top: 0;
-  object-fit: cover;
-  object-position: bottom;
-}
 footer {
   position: relative;
   color: var(--secondary-color);
