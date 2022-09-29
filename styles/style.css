@@ -1,6 +1,6 @@
 :root {
-  --primary-color: #c4ecdc;
-  --secondary-color: #f5f2fe;
+  --primary-color: #cee1a3;
+  --secondary-color: #f5bfd7;
   --tertiary-color: #bedbbc;
   --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
   --font-family: "Maven Pro", sans-serif;
@@ -11,7 +11,12 @@ body {
   /* max-width: 1000px; */
   background-color: #ffffff;
 }
-
+.navbar {
+  position: fixed;
+  width: 100%;
+  margin-top: 0px;
+  z-index: 1;
+}
 h1,
 h2,
 h3 {
@@ -36,7 +41,7 @@ h3 {
 }
 h1 {
   font-size: 70px;
-  color: #f5c2b0;
+  color: var(--secondary-color);
   font-weight: 400px;
   padding: 2px;
 }
@@ -48,17 +53,17 @@ h2 {
 h3 {
   font-size: 24px;
   padding: 20px;
-  color: #bedbbc;
+  color: var(--tertiary-color);
 }
 h4 {
   font-size: 24px;
-  color: var(--tertiary-color);
   font-weight: 400;
   line-height: 1.5;
 }
-
+h5 {
+  color: var(--primary-color);
+}
 p {
-  /* background: var(--secondary-color); */
   padding: 20px;
   border-radius: 4px;
   font-size: 18px;
@@ -98,7 +103,8 @@ p {
   display: block;
 }
 
-.about-section {
+.about-section,
+.hero {
   display: flex;
   margin: 30px 0;
   text-align: center;
@@ -106,7 +112,6 @@ p {
 }
 
 .about-section p {
-  /* margin: 10px; */
   margin: 30px;
 }
 .img-fluid {
@@ -144,6 +149,54 @@ p {
   padding-top: 80px;
   flex-wrap: wrap;
 }
+/* Contact content container */
+.content-container {
+  background-color: #f8f2f8;
+  padding: 100px;
+}
+/* Contact content */
+.content {
+  max-width: 700px;
+  background-color: #f9e9f0;
+  padding: 50px 50px;
+  border-radius: 5px;
+  text-align: center;
+  display: block;
+  margin: 100px auto;
+}
+/* icons */
+.icons {
+  max-width: 700px;
+  display: flex;
+  justify-content: space-around;
+  margin: auto;
+  font-size: 30px;
+}
+.c-icon {
+  color: var(--primary-color);
+}
+
+.c-icon,
+.f-icon {
+  transition: all 200ms ease-in-out;
+}
+
+.c-icon:hover,
+.icon:hover,
+.f-icon:hover {
+  color: var(--secondary-color);
+}
+
+.icon {
+  color: var(--tertiary-color);
+  font-size: 30px;
+}
+
+.f-icon {
+  color: var(--primary-color);
+  font-size: 30px;
+  padding: 10px;
+}
 footer {
   position: relative;
   color: var(--secondary-color);
@@ -154,7 +207,6 @@ footer {
   padding: 15px;
   width: 100%;
 }
-.flowers {
-  max-width: 300px;
-  height: auto;
+a:link {
+  text-decoration: none;
 }
