@@ -19,7 +19,8 @@ body {
 }
 h1,
 h2,
-h3 {
+h3,
+.Skills {
   text-align: center;
   margin: 0;
   border-radius: 2px;
@@ -45,9 +46,14 @@ h1 {
   font-weight: 400px;
   padding: 2px;
 }
-
+.Greeting {
+  font-size: 30px;
+}
 h2 {
   font-size: 40px;
+}
+.name {
+  font-size: 30px;
 }
 
 h3 {
@@ -62,6 +68,14 @@ h4 {
 }
 h5 {
   color: var(--primary-color);
+  font-size: 25px;
+}
+.Skills {
+  color: var(--secondary-color);
+  font-size: 40px;
+}
+.About-header {
+  font-size: 45px;
 }
 p {
   padding: 20px;
@@ -83,7 +97,11 @@ p {
   text-decoration: none;
   text-transform: capitalize;
 }
-
+.contact-link:hover,
+.about-link:hover,
+.project-link:hover {
+  color: var(--secondary-color);
+}
 .contact-link,
 .about-link,
 .project-link {
@@ -91,32 +109,20 @@ p {
   box-shadow: var(--box-shadow);
   color: white;
 }
-
-/* .about-link {
-  color: var(--primary-color);
-  border: 1px solid var(--primary-color);
-} */
-
 .homepage-link {
   color: var(--primary-color);
   text-align: center;
   display: block;
 }
-
-.about-section,
 .hero {
   display: flex;
   margin: 30px 0;
   text-align: center;
   padding: 0px;
 }
-
-.about-section p {
-  margin: 30px;
-}
 .img-fluid {
   display: flex;
-  max-width: 600px;
+  max-width: 99%;
   height: auto;
   vertical-align: middle;
 }
@@ -142,12 +148,23 @@ p {
   text-decoration: none;
   text-transform: capitalize;
 }
+.btn-branding-outline:hover {
+  color: var(--secondary-color);
+}
 .intro {
   display: flex;
   flex-direction: column;
   max-width: 500px;
   padding-top: 80px;
   flex-wrap: wrap;
+}
+/* About section */
+.about-writing {
+  display: flex;
+  justify-content: space-around;
+  font-size: 30px;
+  color: var(--secondary-color);
+  margin: 60px;
 }
 /* Contact content container */
 .content-container {
@@ -197,6 +214,16 @@ p {
   font-size: 30px;
   padding: 10px;
 }
+/* Portfolio details */
+.skill-size {
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.built {
+  color: var(--secondary-color);
+  font-size: 25px;
+}
+/* Footer */
 footer {
   position: relative;
   color: var(--secondary-color);
@@ -210,13 +237,10 @@ footer {
 a:link {
   text-decoration: none;
 }
-.card {
+.card-footer {
   display: flex;
+  justify-content: space-between;
 }
-/* .row {
-  max-width: 1000px;
-  margin: 60px auto;
-} */
 .skillset {
   font-size: 17px;
   color: var(--secondary-color);
@@ -230,4 +254,14 @@ li {
   font-size: 14px;
   padding: 5px 10px;
   transition: all 200ms ease-in-out;
+}
+.p-icons {
+  box-sizing: border-box;
+  margin: auto;
+  justify-content: space-around;
+}
+@media (max-width: 600px) {
+  #wrapper {
+    width: 700px;
+  }
 }
