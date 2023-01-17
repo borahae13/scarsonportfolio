@@ -60,6 +60,7 @@ h3 {
   font-size: 24px;
   padding: 20px;
   color: var(--tertiary-color);
+  font-weight: 400;
 }
 h4 {
   font-size: 24px;
